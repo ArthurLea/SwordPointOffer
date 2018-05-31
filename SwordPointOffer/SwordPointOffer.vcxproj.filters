@@ -20,8 +20,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="findFrom2DArray.h">
+    <ClInclude Include="01_findInPartiallySortedMatrix.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="02_replaceBlank.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="03_printListFromTailToHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
   </ItemGroup>
 </Project>

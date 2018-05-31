@@ -118,7 +118,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="findFrom2DArray.h" />
+    <ClInclude Include="01_findInPartiallySortedMatrix.h" />
+    <ClInclude Include="02_replaceBlank.h" />
+    <ClInclude Include="03_printListFromTailToHead.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
