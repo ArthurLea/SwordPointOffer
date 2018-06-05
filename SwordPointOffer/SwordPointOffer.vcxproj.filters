@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="排序">
+      <UniqueIdentifier>{c08df83b-0e00-4d0b-97e1-50ef99fe5db3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -28,6 +31,24 @@
     </ClInclude>
     <ClInclude Include="03_printListFromTailToHead.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="01_buddleSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="02_directInsertSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="03_shellSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="04_selectSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="05_mergeSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="06_fastSort.h">
+      <Filter>排序</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
