@@ -127,9 +127,11 @@
     <ClInclude Include="02_replaceBlank.h" />
     <ClInclude Include="03_printListFromTailToHead.h" />
     <ClInclude Include="03_shellSort.h" />
+    <ClInclude Include="04_reConstructBinaryTree.h" />
     <ClInclude Include="04_selectSort.h" />
     <ClInclude Include="05_mergeSort.h" />
     <ClInclude Include="06_fastSort.h" />
+    <ClInclude Include="07_heapSort.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

@@ -5,16 +5,16 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="排序">
       <UniqueIdentifier>{c08df83b-0e00-4d0b-97e1-50ef99fe5db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="剑指Offer">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -24,13 +24,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01_findInPartiallySortedMatrix.h">
-      <Filter>头文件</Filter>
+      <Filter>剑指Offer</Filter>
     </ClInclude>
     <ClInclude Include="02_replaceBlank.h">
-      <Filter>头文件</Filter>
+      <Filter>剑指Offer</Filter>
     </ClInclude>
     <ClInclude Include="03_printListFromTailToHead.h">
-      <Filter>头文件</Filter>
+      <Filter>剑指Offer</Filter>
     </ClInclude>
     <ClInclude Include="01_buddleSort.h">
       <Filter>排序</Filter>
@@ -49,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="06_fastSort.h">
       <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="07_heapSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="04_reConstructBinaryTree.h">
+      <Filter>剑指Offer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

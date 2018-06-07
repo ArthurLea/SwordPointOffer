@@ -6,58 +6,26 @@
 * 2、从i开始往后索引（i++)，找到比base大的数，然后a[i] = a[j]
 * 3、如果i<j，重复1、2步骤，结束时i==j
 */
-
-int adjustArr(int arr[], int l, int r);
-void fastSort(int arr[], int l, int r)
+namespace arthurlea_06
 {
-	if (l < r)
+	int adjustArr(int arr[], int l, int r);
+	void fastSort(int arr[], int l, int r)
 	{
-		int baseIndex = adjustArr(arr, l, r);
-		fastSort(arr, l, baseIndex - 1);
-		fastSort(arr, baseIndex + 1, r);
-	}
-}
-int adjustArr(int arr[],int l,int r)
-{
-	int base = arr[l];
-	int i = l;
-	int j = r;
-	while (i < j)
-	{
-		while ((i < j) && arr[j] >= base)
+		if (l < r)
 		{
-			j--;
-		}
-		if (i < j)
-		{
-			arr[i] = arr[j];
-		}
-		while ((i < j) && arr[i] < base)
-		{
-			i++;
-		}
-		if (i < j)
-		{
-			arr[j] = arr[i];
+			int baseIndex = adjustArr(arr, l, r);
+			fastSort(arr, l, baseIndex - 1);
+			fastSort(arr, baseIndex + 1, r);
 		}
 	}
-	arr[i] = base;
-	return i;
-	//arr[j] = base;
-	//return j;
-}
-//改进1：优化代码
-
-void fastSort2(int arr[], int left, int right)
-{
-	if (left < right)
+	int adjustArr(int arr[], int l, int r)
 	{
-		int i = left;
-		int j = right;
-		int base = arr[i];
+		int base = arr[l];
+		int i = l;
+		int j = r;
 		while (i < j)
 		{
-			while ((i < j) && (arr[j] >= base))
+			while ((i < j) && arr[j] >= base)
 			{
 				j--;
 			}
@@ -65,7 +33,7 @@ void fastSort2(int arr[], int left, int right)
 			{
 				arr[i] = arr[j];
 			}
-			while ((i < j) && (arr[i] < base))
+			while ((i < j) && arr[i] < base)
 			{
 				i++;
 			}
@@ -75,8 +43,42 @@ void fastSort2(int arr[], int left, int right)
 			}
 		}
 		arr[i] = base;
+		return i;
 		//arr[j] = base;
-		fastSort2(arr, left, i - 1);
-		fastSort2(arr, i + 1, right);
+		//return j;
+	}
+	//改进1：优化代码
+
+	void fastSort2(int arr[], int left, int right)
+	{
+		if (left < right)
+		{
+			int i = left;
+			int j = right;
+			int base = arr[i];
+			while (i < j)
+			{
+				while ((i < j) && (arr[j] >= base))
+				{
+					j--;
+				}
+				if (i < j)
+				{
+					arr[i] = arr[j];
+				}
+				while ((i < j) && (arr[i] < base))
+				{
+					i++;
+				}
+				if (i < j)
+				{
+					arr[j] = arr[i];
+				}
+			}
+			arr[i] = base;
+			//arr[j] = base;
+			fastSort2(arr, left, i - 1);
+			fastSort2(arr, i + 1, right);
+		}
 	}
 }

@@ -6,58 +6,62 @@
 * 3、i++重复第二步直到i=n-1
 */
 //书本源代码
-void directInsertSort(int arr[], int N)
+namespace arthurlea_02
 {
-	for (int i = 1; i < N; i++) //当前需要排序的数下标
+	void directInsertSort(int arr[], int N)
 	{
-		int j = 0;
-		for (j = i-1; j >= 0; j++)
+		for (int i = 1; i < N; i++) //当前需要排序的数下标
 		{
-			if (arr[i] < arr[j]) //找到需要插入的位置j,数据应该插到j+1
+			int j = 0;
+			for (j = i - 1; j >= 0; j--)
 			{
-				break;
+				if (arr[i] > arr[j]) //找到需要插入的位置j,数据应该插到j+1
+				{
+					break;
+				}
 			}
+			int temp = arr[i];
+			for (int k = i - 1; k >= j; k--) //移动
+			{
+				arr[k + 1] = arr[k];
+			}
+			arr[j + 1] = temp; //复制数据
 		}
-		int temp = arr[i];
-		for (int k = i - 1; k >= j; k--) //移动
-		{
-			arr[k + 1] = arr[k];
-		}
-		arr[j+1] = temp; //复制数据
 	}
-}
 
-//改进代码1，优化
-void directInsertSort2(int arr[], int N)
-{
-	for (int i = 1; i < N; i++)
+	//改进代码1，优化
+	void directInsertSort2(int arr[], int N)
 	{
-		int temp = arr[i]; //待插入的数据
-		if (temp < arr[i - 1])
+		for (int i = 1; i < N; i++)
 		{
-			int j = i - 1;
-			for (; j >= 0&&arr[j]>temp; j--)
+			int temp = arr[i]; //待插入的数据
+			if (temp < arr[i - 1])
 			{
-				arr[j + 1] = arr[j];
+				int j = i - 1;
+				for (; j >= 0 && arr[j]>temp; j--)
+				{
+					arr[j + 1] = arr[j];
+				}
+				arr[j + 1] = temp;
 			}
-			arr[j+1] = temp;
 		}
 	}
-}
-//改进2：使用数据交换来代替数据移动
-inlien void swap(int& a, int& b)
-{
-	int tmp = a;
-	a = b;
-	b = tmp;
-}
-void directInsertSort2(int arr[], int N)
-{
-	for (int i = 1; i < N; i++)
+	//改进2：使用数据交换来代替数据移动
+	inline void swap(int& a, int& b)
 	{
-		for (int j = i - 1; j >= 0 && arr[j] > arr[j+1]; j--)
+		int tmp = a;
+		a = b;
+		b = tmp;
+	}
+	void directInsertSort3(int arr[], int N)
+	{
+		for (int i = 1; i < N; i++)
 		{
-			swap(arr[j], arr[j+1]);
+			for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--)
+			{
+				swap(arr[j], arr[j + 1]);
+			}
 		}
 	}
+
 }
