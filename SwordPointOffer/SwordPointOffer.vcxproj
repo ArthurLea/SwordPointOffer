@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -121,8 +121,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="00_testAllSort.h" />
     <ClInclude Include="01_buddleSort.h" />
     <ClInclude Include="01_findInPartiallySortedMatrix.h" />
+    <ClInclude Include="01_print1ToNOfMaxDigits.h" />
+    <ClInclude Include="02_deletetNode.h" />
     <ClInclude Include="02_directInsertSort.h" />
     <ClInclude Include="02_replaceBlank.h" />
     <ClInclude Include="03_printListFromTailToHead.h" />
@@ -130,8 +133,17 @@
     <ClInclude Include="04_reConstructBinaryTree.h" />
     <ClInclude Include="04_selectSort.h" />
     <ClInclude Include="05_mergeSort.h" />
+    <ClInclude Include="05_twoStackAsQueue.h" />
     <ClInclude Include="06_fastSort.h" />
+    <ClInclude Include="06_minNumberInRotateArray.h" />
+    <ClInclude Include="07_fibonacci.h" />
     <ClInclude Include="07_heapSort.h" />
+    <ClInclude Include="08_numberOf1.h" />
+    <ClInclude Include="09_power.h" />
+    <ClInclude Include="10_reorder.h" />
+    <ClInclude Include="11_findKthToTail.h" />
+    <ClInclude Include="12_reverseList.h" />
+    <ClInclude Include="13_mergeOrderedList.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

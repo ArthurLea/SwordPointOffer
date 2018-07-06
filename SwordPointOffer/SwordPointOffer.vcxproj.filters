@@ -16,6 +16,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="剑指Offer其他代码">
+      <UniqueIdentifier>{a7891334-850a-4836-a4ae-88c64eb4303c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,33 @@
       <Filter>排序</Filter>
     </ClInclude>
     <ClInclude Include="04_reConstructBinaryTree.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="05_twoStackAsQueue.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="00_testAllSort.h">
+      <Filter>排序</Filter>
+    </ClInclude>
+    <ClInclude Include="06_minNumberInRotateArray.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="07_fibonacci.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="08_numberOf1.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="09_power.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="01_print1ToNOfMaxDigits.h">
+      <Filter>剑指Offer其他代码</Filter>
+    </ClInclude>
+    <ClInclude Include="02_deletetNode.h">
+      <Filter>剑指Offer其他代码</Filter>
+    </ClInclude>
+    <ClInclude Include="10_reorder.h">
       <Filter>剑指Offer</Filter>
     </ClInclude>
   </ItemGroup>
