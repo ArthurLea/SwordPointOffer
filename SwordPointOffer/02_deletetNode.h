@@ -13,7 +13,7 @@ namespace arthurleaother
 
 	struct ListNode
 	{
-		int m_value;
+		int m_val;
 		ListNode* m_next;
 	};
 	class Solution_02
@@ -29,7 +29,7 @@ namespace arthurleaother
 			if (pToBeDeleted->m_next != NULL)//删除的结点不是尾结点
 			{
 				ListNode* pNext = pToBeDeleted->m_next;
-				pToBeDeleted->m_value = pNext->m_value;
+				pToBeDeleted->m_val = pNext->m_val;
 				pToBeDeleted->m_next = pNext->m_next;
 
 				delete pNext; //回收空间

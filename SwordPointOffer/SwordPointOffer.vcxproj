@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{435C5252-C540-4E9C-BE2F-77F9047139C3}</ProjectGuid>
     <RootNamespace>SwordPointOffer</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -80,6 +80,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -144,6 +147,18 @@
     <ClInclude Include="11_findKthToTail.h" />
     <ClInclude Include="12_reverseList.h" />
     <ClInclude Include="13_mergeOrderedList.h" />
+    <ClInclude Include="14_hasSubTree.h" />
+    <ClInclude Include="15_mirrorBinaryTree.h" />
+    <ClInclude Include="16_printMatrixClockwisely.h" />
+    <ClInclude Include="17_containMinDataOfStack.h" />
+    <ClInclude Include="18_IsPopOrder.h" />
+    <ClInclude Include="19_printBinaryTreeFromTopToBtm.h" />
+    <ClInclude Include="20_verifySequenceOfBST.h" />
+    <ClInclude Include="21_findPath.h" />
+    <ClInclude Include="22_complexListClone.h" />
+    <ClInclude Include="23_bSearchTreeConvertDoubleList.h" />
+    <ClInclude Include="24_permutation.h" />
+    <ClInclude Include="25_moreThanHalfNum.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

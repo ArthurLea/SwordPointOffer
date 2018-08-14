@@ -48,10 +48,10 @@ namespace arthurlea_07
 		//for (int parentIndex = (i - 1) / 2; (parentIndex >= 0) && (arr[parentIndex] > tmp); i = parentIndex, parentIndex = (i - 1) / 2)
 		//	swap(arr[i], arr[parentIndex]);
 	}
-	//在最小堆中加入新的数据value
-	void headSortInsert(int arr[], int n, int value)
+	//在最小堆中加入新的数据val
+	void headSortInsert(int arr[], int n, int val)
 	{
-		arr[n] = value;
+		arr[n] = val;
 		headSortFixedUp(arr, n);
 	}
 	/* arr[0...n-1]

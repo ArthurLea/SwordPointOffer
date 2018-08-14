@@ -23,7 +23,7 @@ struct TreeNode {
 class Solution_04
 {
 public:
-	TreeNode * reConstructBinaryTree(vector<int> pre, vector<int> vin)
+	TreeNode * reConstructTreeNode(vector<int> pre, vector<int> vin)
 	{
 		if (pre.empty() || vin.empty() || (pre.size()!=vin.size()))
 			return NULL;
@@ -31,10 +31,10 @@ public:
 		int* preEnd = &pre[pre.size() - 1];
 		int* vinStart = &vin[0];
 		int* vinEnd = &vin[vin.size() - 1];
-		return constructBinaryTree(preStart, preEnd, vinStart, vinEnd);
+		return constructTreeNode(preStart, preEnd, vinStart, vinEnd);
 	}
 private:
-	TreeNode * constructBinaryTree(int* preStart, int* preEnd, int* vinStart, int* vinEnd)
+	TreeNode * constructTreeNode(int* preStart, int* preEnd, int* vinStart, int* vinEnd)
 	{
 		int rootVal = preStart[0];
 		TreeNode* root = new TreeNode(preStart[0]);
@@ -74,12 +74,12 @@ private:
 		//构建左子树
 		if (leftLength > 0)
 		{
-			root->left = constructBinaryTree(preStart + 1, preLeftEnd, vinStart, rootVin - 1);
+			root->left = constructTreeNode(preStart + 1, preLeftEnd, vinStart, rootVin - 1);
 		}
 		//构建右子树
 		if (leftLength < (preEnd - preStart))
 		{
-			root->right = constructBinaryTree(preLeftEnd + 1, preEnd, rootVin + 1, vinEnd);
+			root->right = constructTreeNode(preLeftEnd + 1, preEnd, rootVin + 1, vinEnd);
 		}
 
 		return root;

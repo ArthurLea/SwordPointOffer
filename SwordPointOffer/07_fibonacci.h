@@ -11,11 +11,9 @@
 *	假如有n级阶梯，第一种跳1级，剩下n-1级阶梯的为f(n-1)的跳法；
 *				  第二种跳2级，剩下n-2阶梯的为f(n-2)的跳法，那么总数为f(n)=f(n-1)+f(n-2)
 */
+#include <cmath>
 namespace arthurlea
 {
-
-#include <cmath>
-
 class Solution_07 
 {
 public:

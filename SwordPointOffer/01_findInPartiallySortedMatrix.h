@@ -6,6 +6,8 @@
 */
 namespace arthurlea
 {
+#include <vector>
+using namespace std;
 
 typedef struct index
 {

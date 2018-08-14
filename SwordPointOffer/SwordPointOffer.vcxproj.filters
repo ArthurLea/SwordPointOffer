@@ -86,6 +86,51 @@
     <ClInclude Include="10_reorder.h">
       <Filter>剑指Offer</Filter>
     </ClInclude>
+    <ClInclude Include="11_findKthToTail.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="12_reverseList.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="13_mergeOrderedList.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="14_hasSubTree.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="15_mirrorBinaryTree.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="16_printMatrixClockwisely.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="17_containMinDataOfStack.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="18_IsPopOrder.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="19_printBinaryTreeFromTopToBtm.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="20_verifySequenceOfBST.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="21_findPath.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="22_complexListClone.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="24_permutation.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="23_bSearchTreeConvertDoubleList.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="25_moreThanHalfNum.h">
+      <Filter>剑指Offer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

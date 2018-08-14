@@ -1,14 +1,12 @@
-namespace arthurlea
-{
-
 #include <cstring>
-#include <cstdlib>
+#include <cstdlib> //srand NULL
+#include <cstdio>
 
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 using namespace std;
 
 #include "00_testAllSort.h"
@@ -22,8 +20,10 @@ using namespace std;
 #include "07_fibonacci.h"
 #include "08_numberOf1.h"
 #include "09_power.h"
-//#include <cstdlib> //srand NULL
-#include <ctime>
+
+#include "24_permutation.h"
+namespace arthurlea
+{
 void _01_test()
 {
 	vector<vector<int> > array;
@@ -108,7 +108,7 @@ void _04_test()
 		vin.push_back(vinArr[i]);
 	}
 	arthurlea::Solution_04 solution;
-	arthurlea::TreeNode* root = solution.reConstructBinaryTree(pre, vin);
+	arthurlea::TreeNode* root = solution.reConstructTreeNode(pre, vin);
 }
 void _06_test()
 {
@@ -178,7 +178,17 @@ void _09_test()
 	cout << solution.Power(2.0,-100) << endl;
 }
 
+void _23_test()
+{
+	char pStr[] = "abc";
+	arthurlea::Solution_24 solution;
+	cout << solution.permutation(pStr) << endl;
+	char pStr1[] = "abcb";
+	cout << solution.permutation(pStr1) << endl;
 }
+
+}
+
 int main(int argc, char* argv[])
 {	
 	//arthurlea::sortTest(1000);
@@ -193,8 +203,9 @@ int main(int argc, char* argv[])
 	//arthurlea::_06_test();
 	//arthurlea::_07_test();
 	//arthurlea::_08_test();
-	arthurlea::_09_test();
+	//arthurlea::_09_test();
 
+	arthurlea::_23_test();
 	system("pause");
 	return 0;
 }

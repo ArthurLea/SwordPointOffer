@@ -26,21 +26,13 @@ namespace arthurlea_06
 		while (i < j)
 		{
 			while ((i < j) && arr[j] >= base)
-			{
 				j--;
-			}
 			if (i < j)
-			{
 				arr[i] = arr[j];
-			}
 			while ((i < j) && arr[i] < base)
-			{
 				i++;
-			}
 			if (i < j)
-			{
 				arr[j] = arr[i];
-			}
 		}
 		arr[i] = base;
 		return i;
